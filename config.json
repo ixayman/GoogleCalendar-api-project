@@ -1,0 +1,17 @@
+{
+  "api-scopes":["https://www.googleapis.com/auth/calendar"],
+  "test_calendar_id": "1e62461edb158e20da3aaa1ecd6562aaf0aedaf03bdaf2527e617770abed28bd@group.calendar.google.com",
+  "quick_add_text": "Appointment at 5tech on July 23rd 9am-3pm",
+  "object_kind": {
+    "event": "calendar#event",
+    "events": "calendar#events",
+    "calendar": "calendar#calendar",
+    "calendarList": "calendar#calendarList",
+    "colors": "calendar#colors",
+    "settings": "calendar#settings",
+    "setting": "calendar#setting"
+  },
+    "calendar_settings": ["autoAddHangouts","format24HourTime",
+      "defaultEventLength","dateFieldOrder","weekStart","format24HourTime","timezone","locale"]
+
+}

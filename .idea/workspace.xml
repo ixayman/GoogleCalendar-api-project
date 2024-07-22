@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd0a3842-7c65-414c-858b-3323f87f5ba3" name="Changes" comment="" />
+    <list default="true" id="fd0a3842-7c65-414c-858b-3323f87f5ba3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/infra/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/object_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_event_operations_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/google_service_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/infra/google_service_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/calendarlist_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/calendarlist_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/calendars_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/calendars_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/colors_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/colors_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/data_structures/calendar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/data_structures/event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/events_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/logic/events_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_calendar_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_calendar_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_calendarlist_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_calendarlist_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_colors_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_colors_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_event_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_event_add_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_settings_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_settings_api.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ixayman&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ixayman/api-final-project.git&quot;,
+    &quot;accountId&quot;: &quot;b761190d-6085-47d3-a32a-a2738827bbf8&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2jXk8oh1lqGn6211RfadXnKv9qx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,11 +62,132 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Notification.DisplayName-DoNotAsk-GitHub Copilot": "GitHub Copilot",
+    "Notification.DoNotAsk-GitHub Copilot": "true",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar_by_id.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar_by_id.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_patch_calendar.executor": "Run",
+    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_update_calendar.executor": "Run",
+    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.executor": "Run",
+    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_calendar_in_calendar_list.executor": "Run",
+    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_get_calendar_list_api.executor": "Run",
+    "Python tests.Python tests for test_colors_api.TestColorsAPI.executor": "Run",
+    "Python tests.Python tests for test_colors_api.TestColorsAPI.test_calendar_colors_api.executor": "Run",
+    "Python tests.Python tests for test_colors_api.TestColorsAPI.test_get_colors_api.executor": "Debug",
+    "Python tests.Python tests for test_event_add_api.TestEventsAddAPI.executor": "Run",
+    "Python tests.Python tests for test_event_api.TestEventsAPI.test_get_calendar_events.executor": "Run",
+    "Python tests.Python tests for test_event_api.TestEventsAPI.test_quick_add_event.executor": "Run",
+    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_delete_event.executor": "Run",
+    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_get_event_by_id.executor": "Run",
+    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_patch_event.executor": "Run",
+    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_update_event.executor": "Run",
+    "Python tests.Python tests for test_event_operations_api.TestEventsOperationsAPI.executor": "Run",
+    "Python tests.Python tests for test_settings_api.TestColorsAPI.executor": "Run",
+    "Python tests.Python tests for test_settings_api.TestColorsAPI.test_single_setting_api.executor": "Run",
+    "Python tests.Python tests for test_settings_api.TestColorsAPI.test_user_settings_api.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/evoix/PycharmProjects/api-final-project/infra",
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\evoix\PycharmProjects\api-final-project\infra" />
+      <recent name="C:\Users\evoix\PycharmProjects\api-final-project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar">
+    <configuration name="Python tests for test_calendar_api.TestColorsAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="api-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_calendar_api.TestColorsAPI&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="api-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_calendar_api.TestColorsAPI.test_insert_new_calendar&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_event_add_api.TestEventsAddAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="api-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event_add_api.TestEventsAddAPI&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_event_operations_api.TestEventsOperationsAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="api-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_event_operations_api.TestEventsOperationsAPI&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_settings_api.TestColorsAPI" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="api-final-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_settings_api.TestColorsAPI&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar" />
+        <item itemvalue="Python tests.Python tests for test_calendar_api.TestColorsAPI" />
+        <item itemvalue="Python tests.Python tests for test_settings_api.TestColorsAPI" />
+        <item itemvalue="Python tests.Python tests for test_event_operations_api.TestEventsOperationsAPI" />
+        <item itemvalue="Python tests.Python tests for test_event_add_api.TestEventsAddAPI" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

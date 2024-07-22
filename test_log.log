@@ -1,0 +1,132 @@
+
+2024-07-22 13:34:02,211 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 13:34:11,882 - test_calendar_api - INFO - Inserted new calendar with ID: d8526bdfb457f1bf1ef86f8ef97a37f0b194914774747daa23509515d21f3b19@group.calendar.google.com
+2024-07-22 13:34:11,882 - test_calendar_api - INFO - Test Case: test_get_calendar_by_id
+2024-07-22 13:34:12,483 - test_calendar_api - INFO - test_get_calendar_by_id - passed
+2024-07-22 13:34:12,485 - test_calendar_api - INFO - Tearing down the test case environment
+2024-07-22 13:34:13,890 - test_calendar_api - INFO - Deleted calendar with ID: d8526bdfb457f1bf1ef86f8ef97a37f0b194914774747daa23509515d21f3b19@group.calendar.google.com
+2024-07-22 14:41:42,057 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:41:49,459 - test_calendar_api - INFO - Inserted new calendar with ID: 1418f9941885036f7c43b9d7f7287c8e68223c2e09ece44e43bdfa31d72bdb35@group.calendar.google.com
+2024-07-22 14:41:49,459 - test_calendar_api - INFO - Test Case: test_delete_calendar_by_id
+2024-07-22 14:41:50,924 - test_calendar_api - INFO - test_delete_calendar_by_id - passed
+2024-07-22 14:41:50,925 - test_calendar_api - INFO - Tearing down the test case environment
+2024-07-22 14:41:51,071 - test_calendar_api - INFO - exception incase of calendar deletion test, no second deletion needed
+2024-07-22 14:41:51,072 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:41:59,143 - test_calendar_api - INFO - Inserted new calendar with ID: a829f9937a8cef00ec78f48ab66d0b59f2cf522fa7e373f633ca3e0811658171@group.calendar.google.com
+2024-07-22 14:41:59,144 - test_calendar_api - INFO - Test Case: test_get_calendar_by_id
+2024-07-22 14:41:59,276 - test_calendar_api - INFO - test_get_calendar_by_id - passed
+2024-07-22 14:41:59,277 - test_calendar_api - INFO - Tearing down the test case environment
+2024-07-22 14:42:00,668 - test_calendar_api - INFO - Deleted calendar with ID: a829f9937a8cef00ec78f48ab66d0b59f2cf522fa7e373f633ca3e0811658171@group.calendar.google.com
+2024-07-22 14:42:00,669 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:42:08,717 - test_calendar_api - INFO - Inserted new calendar with ID: 709a2291d7ff25fb23a2d7aa60c67f4dd701841fdce2566939dcefd7509e8e75@group.calendar.google.com
+2024-07-22 14:42:08,718 - test_calendar_api - INFO - Test Case: test_insert_new_calendar
+2024-07-22 14:42:08,718 - test_calendar_api - INFO - test_insert_new_calendar - passed
+2024-07-22 14:42:08,718 - test_calendar_api - INFO - Tearing down the test case environment
+2024-07-22 14:42:10,318 - test_calendar_api - INFO - Deleted calendar with ID: 709a2291d7ff25fb23a2d7aa60c67f4dd701841fdce2566939dcefd7509e8e75@group.calendar.google.com
+2024-07-22 14:42:10,319 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:42:10,744 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:42:10,744 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:42:10,747 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:42:11,157 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:42:11,157 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:43:16,997 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:43:17,000 - test_calendarlist_api - INFO - Test Case: test_calendar_in_calendar_list
+2024-07-22 14:43:17,474 - test_calendarlist_api - ERROR - Test failed with exception: False is not true
+2024-07-22 14:43:17,478 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:43:17,478 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:43:17,480 - test_calendarlist_api - INFO - Test Case: test_get_calendar_list_api
+2024-07-22 14:43:17,981 - test_calendarlist_api - INFO - test_get_calendar_list_api - passed
+2024-07-22 14:43:17,981 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:44:16,479 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:44:16,482 - test_calendarlist_api - INFO - Test Case: test_calendar_in_calendar_list
+2024-07-22 14:44:16,947 - test_calendarlist_api - ERROR - Test failed with exception: False is not true
+2024-07-22 14:44:16,950 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:44:16,950 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:44:16,954 - test_calendarlist_api - INFO - Test Case: test_get_calendar_list_api
+2024-07-22 14:44:17,448 - test_calendarlist_api - INFO - test_get_calendar_list_api - passed
+2024-07-22 14:44:17,448 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:48:43,855 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:48:43,857 - test_calendarlist_api - INFO - Test Case: test_calendar_in_calendar_list
+2024-07-22 14:48:44,314 - test_calendarlist_api - ERROR - Test failed with exception: False is not true
+2024-07-22 14:48:44,317 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:48:44,318 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:48:44,321 - test_calendarlist_api - INFO - Test Case: test_get_calendar_list_api
+2024-07-22 14:48:44,774 - test_calendarlist_api - INFO - test_get_calendar_list_api - passed
+2024-07-22 14:48:44,774 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:49:57,249 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:49:57,252 - test_calendarlist_api - INFO - Test Case: test_calendar_in_calendar_list
+2024-07-22 14:49:57,725 - test_calendarlist_api - INFO - test_calendar_in_calendar_list - passed
+2024-07-22 14:49:57,727 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:01,472 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:50:01,474 - test_calendarlist_api - INFO - Test Case: test_calendar_in_calendar_list
+2024-07-22 14:50:01,940 - test_calendarlist_api - INFO - test_calendar_in_calendar_list - passed
+2024-07-22 14:50:01,941 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:01,941 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-22 14:50:01,945 - test_calendarlist_api - INFO - Test Case: test_get_calendar_list_api
+2024-07-22 14:50:02,401 - test_calendarlist_api - INFO - test_get_calendar_list_api - passed
+2024-07-22 14:50:02,402 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:10,854 - test_event_add_api - INFO - Setting up the test case environment
+2024-07-22 14:50:10,857 - test_event_add_api - INFO - Test Case: test_add_event
+2024-07-22 14:50:11,386 - test_event_add_api - INFO - test_add_event - passed
+2024-07-22 14:50:11,388 - test_event_add_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:11,389 - test_event_add_api - INFO - Setting up the test case environment
+2024-07-22 14:50:11,392 - test_event_add_api - INFO - Test Case: test_quick_add_event
+2024-07-22 14:50:11,974 - test_event_add_api - INFO - test_quick_add_event - passed
+2024-07-22 14:50:11,975 - test_event_add_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:17,026 - test_event_operations_api - INFO - Setting up the test case environment
+2024-07-22 14:50:17,678 - test_event_operations_api - INFO - Test Case: test_delete_event
+2024-07-22 14:50:18,018 - test_event_operations_api - INFO - test_delete_event - passed
+2024-07-22 14:50:18,018 - test_event_operations_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:18,207 - test_event_operations_api - INFO - exception incase of event deletion test, no second deletion needed
+2024-07-22 14:50:18,209 - test_event_operations_api - INFO - Setting up the test case environment
+2024-07-22 14:50:18,825 - test_event_operations_api - INFO - Test Case: test_get_calendar_events
+2024-07-22 14:50:19,100 - test_event_operations_api - INFO - test_get_calendar_events - passed
+2024-07-22 14:50:19,100 - test_event_operations_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:19,462 - test_event_operations_api - INFO - Setting up the test case environment
+2024-07-22 14:50:20,212 - test_event_operations_api - INFO - Test Case: test_get_event_by_id
+2024-07-22 14:50:20,455 - test_event_operations_api - INFO - test_get_event_by_id - passed
+2024-07-22 14:50:20,455 - test_event_operations_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:20,719 - test_event_operations_api - INFO - Setting up the test case environment
+2024-07-22 14:50:21,312 - test_event_operations_api - INFO - Test Case: test_patch_event
+2024-07-22 14:50:21,926 - test_event_operations_api - INFO - test_patch_event - passed
+2024-07-22 14:50:21,926 - test_event_operations_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:22,304 - test_event_operations_api - INFO - Setting up the test case environment
+2024-07-22 14:50:22,947 - test_event_operations_api - INFO - Test Case: test_update_event
+2024-07-22 14:50:23,475 - test_event_operations_api - INFO - test_update_event - passed
+2024-07-22 14:50:23,475 - test_event_operations_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:27,966 - test_settings_api - INFO - Setting up the test case environment
+2024-07-22 14:50:27,969 - test_settings_api - INFO - Test Case: test_single_setting_api
+2024-07-22 14:50:28,345 - test_settings_api - INFO - test_single_setting_api - passed
+2024-07-22 14:50:28,345 - test_settings_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:28,346 - test_settings_api - INFO - Setting up the test case environment
+2024-07-22 14:50:28,349 - test_settings_api - INFO - Test Case: test_user_settings_api
+2024-07-22 14:50:28,740 - test_settings_api - INFO - test_user_settings_api - passed
+2024-07-22 14:50:28,740 - test_settings_api - INFO - Tearing down the test case environment
+2024-07-22 14:50:38,894 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:50:39,285 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:50:39,285 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:50:39,289 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:50:39,716 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:50:39,716 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:50:39,718 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:50:40,124 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:50:40,124 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:50:40,126 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:50:40,518 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:50:40,518 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 14:50:40,519 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 14:50:40,898 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 14:50:40,899 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 15:03:32,063 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 15:03:32,522 - googleapiclient.http - WARNING - Encountered 403 Forbidden with reason "quotaExceeded"
+2024-07-22 15:03:32,523 - test_calendar_api - ERROR - Error during setup: <HttpError 403 when requesting https://www.googleapis.com/calendar/v3/calendars?alt=json returned "Calendar usage limits exceeded.". Details: "[{'domain': 'usageLimits', 'reason': 'quotaExceeded', 'message': 'Calendar usage limits exceeded.'}]">
+2024-07-22 15:37:04,831 - test_settings_api - INFO - Setting up the test case environment
+2024-07-22 15:37:04,834 - test_settings_api - INFO - Test Case: test_single_setting_api
+2024-07-22 15:37:05,228 - test_settings_api - INFO - test_single_setting_api - passed
+2024-07-22 15:37:05,229 - test_settings_api - INFO - Tearing down the test case environment
+2024-07-22 15:59:52,403 - test_calendar_api - INFO - Setting up the test case environment
+2024-07-22 15:59:59,493 - test_calendar_api - INFO - Inserted new calendar with ID: 9514657bf6a2442697697f68237fa282214bfd028b708922315f21716b2c517c@group.calendar.google.com
+2024-07-22 15:59:59,493 - test_calendar_api - INFO - Test Case: test_get_calendar_by_id
+2024-07-22 15:59:59,673 - test_calendar_api - INFO - test_get_calendar_by_id - passed
+2024-07-22 15:59:59,674 - test_calendar_api - INFO - Tearing down the test case environment
+2024-07-22 16:00:00,748 - test_calendar_api - INFO - Deleted calendar with ID: 9514657bf6a2442697697f68237fa282214bfd028b708922315f21716b2c517c@group.calendar.google.com

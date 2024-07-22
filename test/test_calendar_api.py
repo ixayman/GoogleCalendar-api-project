@@ -1,39 +1,103 @@
 import unittest
-from logic.calendars_api import CalendarsAPI
-from logic.calendarlist_api import CalendarListAPI
-from logic.data_structures.calnedar import Calendar
+
 from infra.utils import generate_random_string
+from infra.logger import Logger
+from logic.calendars_api import CalendarsAPI
+from test.object_generator import example_calendar_object
 
 
 class TestColorsAPI(unittest.TestCase):
-    new_calendar = Calendar(summary='test calendar', location="Haifa",
-                            time_zone="Asia/Jerusalem", description="calendar to run tests on").return_dict()
+    new_calendar = example_calendar_object()
 
     def setUp(self):
-        self.calendarsAPI = CalendarsAPI()
-        self.calendars_listAPI = CalendarListAPI()
+        # Initialize logger and CalendarsAPI instance
+        self.logger = Logger.setup_logger(__name__)
+        self.logger.info("Setting up the test case environment")
+        try:
+            self.calendarsAPI = CalendarsAPI()
+            self.config = self.calendarsAPI.config
+            self.service = self.calendarsAPI
+            self.created_calendar = self.service.insert_calendar(self.new_calendar)
+            self.logger.info(f"Inserted new calendar with ID: {self.created_calendar['id']}")
+        except Exception as e:
+            self.logger.error(f"Error during setup: {e}")
+            self.fail(f"Setup failed with exception: {e}")
 
     def tearDown(self):
-        self.api = None
+        # Delete the created calendar and reset the CalendarsAPI instance
+        self.logger = Logger.setup_logger(__name__)
+        self.logger.info("Tearing down the test case environment")
+        try:
+            self.service.delete_calendar(self.created_calendar["id"])
+            self.logger.info(f"Deleted calendar with ID: {self.created_calendar['id']}")
+        except Exception as e:
+            self.logger.info(f"exception incase of calendar deletion test, no second deletion needed")
+            pass
+        self.calendarsAPI = None
 
-    def test_insert_calendar(self):
-        service = self.calendarsAPI
-        self.assertIsNotNone(service, "Service should not be None")
-        c_list = service.insert_calendar(self.new_calendar)
-        self.assertEqual(c_list['summary'], self.new_calendar['summary'])
-        self.assertEqual(c_list['location'], self.new_calendar['location'])
-        self.assertEqual(c_list['timeZone'], self.new_calendar['timeZone'])
-        self.assertEqual(c_list['description'], self.new_calendar['description'])
+    def test_insert_new_calendar(self):
+        # Verify the created calendar's attributes
+        self.logger.info("Test Case: " + self._testMethodName)
+        try:
+            self.assertEqual(self.created_calendar['kind'], self.config["object_kind"]["calendar"])
+            self.assertEqual(self.created_calendar['summary'], self.new_calendar['summary'])
+            self.assertEqual(self.created_calendar['location'], self.new_calendar['location'])
+            self.assertEqual(self.created_calendar['timeZone'], self.new_calendar['timeZone'])
+            self.assertEqual(self.created_calendar['description'], self.new_calendar['description'])
+            self.logger.info(self._testMethodName + " - passed")
+        except Exception as e:
+            self.logger.error(f"Test failed with exception: {e}")
+            self.fail(f"Insert new calendar test failed with exception: {e}")
 
-    def test_delete_calendar(self):
-        service = self.calendarsAPI
-        calendar = service.insert_calendar(self.new_calendar)
-        calendar_id = service.get_calendar_id(self, calendar)
-        self.assertIsNotNone(service, "Service should not be None")
-        service.delete_calendar(calendar_id)
+    def test_get_calendar_by_id(self):
+        # Verify the retrieved calendar's attributes
+        self.logger.info("Test Case: " + self._testMethodName)
+        try:
+            c_list = self.service.get_calendar(self.created_calendar["id"])
+            self.assertEqual(c_list['kind'], self.config["object_kind"]["calendar"])
+            self.assertEqual(c_list['id'], self.created_calendar["id"])
+            self.logger.info(self._testMethodName + " - passed")
+        except Exception as e:
+            self.logger.error(f"Test failed with exception: {e}")
+            self.fail(f"Get calendar by ID test failed with exception: {e}")
 
-    def test_get_calendar(self):
-        service = self.calendarsAPI
-        self.assertIsNotNone(service, "Service should not be None")
-        c_list = service.get_calendar('705c5da6880f8a88a3bdfac7803c36fe655fc3ff0778cdc4bc47f1029f0a7331@group.calendar.google.com')
-        print(c_list)
+    def test_patch_calendar(self):
+        # Verify the patched calendar's attributes
+        self.logger.info("Test Case: " + self._testMethodName)
+        try:
+            new_summary = generate_random_string(8)
+            calendar_object = self.service.create_calendar_object(summary=new_summary)
+            updated_calendar = self.service.patch_calendar(self.created_calendar["id"], calendar_object)
+            self.assertEqual(updated_calendar['kind'], self.config["object_kind"]["calendar"])
+            self.assertEqual(updated_calendar['summary'], new_summary)
+            self.assertEqual(self.new_calendar['description'], updated_calendar['description'])
+            self.logger.info(self._testMethodName + " - passed")
+        except Exception as e:
+            self.logger.error(f"Test failed with exception: {e}")
+            self.fail(f"Patch calendar test failed with exception: {e}")
+
+    def test_update_calendar(self):
+        # Verify the updated calendar's attributes
+        self.logger.info("Test Case: " + self._testMethodName)
+        try:
+            new_summary = generate_random_string(8)
+            calendar_object = self.service.create_calendar_object(summary=new_summary)
+            updated_calendar = self.service.update_calendar(self.created_calendar["id"], calendar_object)
+            self.assertEqual(updated_calendar['kind'], self.config["object_kind"]["calendar"])
+            self.assertEqual(updated_calendar['summary'], new_summary)
+            self.assertNotIn("description", updated_calendar)
+            self.logger.info(self._testMethodName + " - passed")
+        except Exception as e:
+            self.logger.error(f"Test failed with exception: {e}")
+            self.fail(f"Update calendar test failed with exception: {e}")
+
+    def test_delete_calendar_by_id(self):
+        # Verify the calendar deletion operation
+        self.logger.info("Test Case: " + self._testMethodName)
+        try:
+            response = self.service.delete_calendar(self.created_calendar["id"])
+            self.assertEqual(response, None)  # successful response returns None
+            self.logger.info(self._testMethodName + " - passed")
+        except Exception as e:
+            self.logger.error(f"Test failed with exception: {e}")
+            self.fail(f"Delete calendar by ID test failed with exception: {e}")

@@ -6,23 +6,17 @@ from logic.colors_api import ColorsAPI
 class TestColorsAPI(unittest.TestCase):
 
     def setUp(self):
+        # Initialize ColorsAPI instance and retrieve colors
         self.api = ColorsAPI()
+        self.colors = self.api.get_colors()
 
     def tearDown(self):
+        # Reset the ColorsAPI instance
         self.api = None
 
-    def test_calendar_colors_api(self):
-        service = self.api.service
-        self.assertIsNotNone(service, "Service should not be None")
-        colors = self.api.get_calendar_colors()
-        self.assertIn("1", colors, "Color ID '1' should be in the colors")
-        self.assertIn("foreground", colors["1"], "Foreground color should be present in color ID '1'")
-        self.assertEqual(colors["1"]["foreground"], "#1d1d1d")
+    def test_get_colors_api(self):
+        # Verify the retrieved colors contain expected keys and kind
+        self.assertEqual(self.colors["kind"], "calendar#colors")
+        self.assertIn("calendar", self.colors)
+        self.assertIn("event", self.colors)
 
-    def test_event_colors_api(self):
-        service = self.api.service
-        self.assertIsNotNone(service, "Service should not be None")
-        colors = self.api.get_event_colors()
-        self.assertIn("1", colors, "Color ID '1' should be in the colors")
-        self.assertIn("foreground", colors["1"], "Foreground color should be present in color ID '1'")
-        self.assertEqual(colors["1"]["foreground"], "#1d1d1d")

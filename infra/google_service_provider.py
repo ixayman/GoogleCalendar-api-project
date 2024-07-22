@@ -10,6 +10,7 @@ from infra.config_provider import ConfigProvider
 class GoogleServiceProvider:
     def __init__(self):
         self.config = ConfigProvider.load_from_file()
+        # Credentials
         self.CLIENT_SECRET_FILE = '../client_secret.json'
         self.TOKEN_PICKLE_FILE = '../token.pickle'
         # Scopes for the API
@@ -27,8 +28,7 @@ class GoogleServiceProvider:
             if creds and creds.expired and creds.refresh_token:
                 creds.refresh(Request())
             else:
-                flow = InstalledAppFlow.from_client_secrets_file(self.CLIENT_SECRET_FILE,
-                                                                 self.SCOPES)
+                flow = InstalledAppFlow.from_client_secrets_file(self.CLIENT_SECRET_FILE, self.SCOPES)
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
             with open(self.TOKEN_PICKLE_FILE, 'wb') as token:

@@ -7,30 +7,18 @@ class CalendarsAPI(GoogleServiceProvider):
         super().__init__()
         self.service = self.authenticate_google_service()
 
-    def clear_primary_calendar(self):
-        # Clears a primary calendar.
-        # This operation deletes all events associated with the primary calendar of an account
-        return self.service.calendars().clear('primary').execute()
-
-    def delete_calendar(self, calendar_id):
-        # Deletes a secondary calendar
-        self.service.calendars().delete(calendarId=calendar_id).execute()
+    def insert_calendar(self, calendar):
+        # Creates a secondary calendar
+        return self.service.calendars().insert(body=calendar).execute()
 
     def get_calendar(self, calendar_id):
         # Returns metadata for a calendar
         return self.service.calendars().get(calendarId=calendar_id).execute()
 
     @staticmethod
-    def get_calendar_id(self, calendar):
-        return calendar['id']
-
-    def insert_calendar(self, calendar):
-        # Creates a secondary calendar
-        return self.service.calendars().insert(body=calendar).execute()
-
-    def update_calendar(self, calendar_id, description=None, location=None, summary=None, timeZone=None):
-        # Updates an existing calendar summery
-        calendar_list_entry = self.get_calendar(calendar_id)
+    def create_calendar_object(description=None, location=None, summary=None, timeZone=None):
+        # Creates a calendar object
+        calendar_list_entry = {}
         if description is not None:
             calendar_list_entry['description'] = description
         if location is not None:
@@ -39,4 +27,22 @@ class CalendarsAPI(GoogleServiceProvider):
             calendar_list_entry['summary'] = summary
         if timeZone is not None:
             calendar_list_entry['timeZone'] = timeZone
-        self.service.calendars().update(calendarId=calendar_id, body=calendar_list_entry).execute()
+        return calendar_list_entry
+
+    @staticmethod
+    def get_calendar_id(self, calendar):
+        return calendar['id']
+
+    def patch_calendar(self, calendar_id, calendar_object):
+        # Updates parts of an existing calendar
+        return self.service.calendars().patch(calendarId=calendar_id, body=calendar_object).execute()
+
+    def update_calendar(self, calendar_id, calendar_object):
+        # refill an existing calendar data
+        return self.service.calendars().update(calendarId=calendar_id, body=calendar_object).execute()
+
+    def delete_calendar(self, calendar_id):
+        # Deletes a secondary calendar
+        self.service.calendars().delete(calendarId=calendar_id).execute()
+
+

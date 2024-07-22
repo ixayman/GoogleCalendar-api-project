@@ -28,3 +28,11 @@ class CalendarListAPI(GoogleServiceProvider):
         calendar_list_entry = self.get_calendar(calendar_id)
         calendar_list_entry['summaryOverride'] = summary
         self.service.calendarList().update(calendarId=calendar_id, body=calendar_list_entry).execute()
+
+    def check_if_calendar_in_calendar_list(self, calendar_id):
+        # Checks if a calendar is in the user's calendar list
+        calendar_list = self.get_calendar_list()
+        for calendar in calendar_list['items']:
+            if calendar['id'] == calendar_id:
+                return True
+        return False
