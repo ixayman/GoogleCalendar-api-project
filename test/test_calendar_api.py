@@ -12,6 +12,7 @@ class TestColorsAPI(unittest.TestCase):
     def setUp(self):
         # Initialize logger and CalendarsAPI instance
         self.logger = Logger.setup_logger(__name__)
+        self.logger.info("-" * 26)
         self.logger.info("Setting up the test case environment")
         try:
             self.calendarsAPI = CalendarsAPI()
@@ -34,6 +35,7 @@ class TestColorsAPI(unittest.TestCase):
             self.logger.info(f"exception incase of calendar deletion test, no second deletion needed")
             pass
         self.calendarsAPI = None
+        self.logger.info("-" * 26)
 
     def test_insert_new_calendar(self):
         # Verify the created calendar's attributes

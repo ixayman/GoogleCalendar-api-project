@@ -10,6 +10,7 @@ class TestColorsAPI(unittest.TestCase):
     def setUp(self):
         # Initialize logger and CalendarListAPI instance
         self.logger = Logger.setup_logger(__name__)
+        self.logger.info("-" * 26)
         self.logger.info("Setting up the test case environment")
         try:
             self.api = CalendarListAPI()
@@ -23,6 +24,7 @@ class TestColorsAPI(unittest.TestCase):
         self.logger = Logger.setup_logger(__name__)
         self.logger.info("Tearing down the test case environment")
         self.api = None
+        self.logger.info("-" * 26)
 
     def test_get_calendar_list_api(self):
         # Verify the calendar list attributes and summaries

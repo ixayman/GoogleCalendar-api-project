@@ -10,6 +10,7 @@ class TestEventsOperationsAPI(unittest.TestCase):
     def setUp(self):
         # Initialize logger and EventsAPI instance, and insert a new event
         self.logger = Logger.setup_logger(__name__)
+        self.logger.info("-" * 26)
         self.logger.info("Setting up the test case environment")
         try:
             self.api = EventsAPI()
@@ -29,6 +30,7 @@ class TestEventsOperationsAPI(unittest.TestCase):
             self.logger.info(f"exception incase of event deletion test, no second deletion needed")
             pass
         self.api = None
+        self.logger.info("-" * 26)
 
     def test_get_event_by_id(self):
         # Verify the retrieved event's attributes

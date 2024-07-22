@@ -130,3 +130,6 @@
 2024-07-22 15:59:59,673 - test_calendar_api - INFO - test_get_calendar_by_id - passed
 2024-07-22 15:59:59,674 - test_calendar_api - INFO - Tearing down the test case environment
 2024-07-22 16:00:00,748 - test_calendar_api - INFO - Deleted calendar with ID: 9514657bf6a2442697697f68237fa282214bfd028b708922315f21716b2c517c@group.calendar.google.com
+2024-07-22 20:58:20,494 - test_settings_api - INFO - --------------------------
+2024-07-22 20:58:20,494 - test_settings_api - INFO - Setting up the test case environment
+2024-07-22 20:58:20,494 - test_settings_api - ERROR - Error during setup: [Errno 2] No such file or directory: '../client_secret.json'
