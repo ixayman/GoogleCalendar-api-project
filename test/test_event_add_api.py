@@ -1,5 +1,4 @@
 import unittest
-from infra.api_wrapper import APIWrapper
 from infra.logger import Logger
 from logic.events_api import EventsAPI
 from test.object_generator import example_event_object

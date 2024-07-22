@@ -1,5 +1,4 @@
 import unittest
-from infra.api_wrapper import APIWrapper
 from logic.colors_api import ColorsAPI
 
 

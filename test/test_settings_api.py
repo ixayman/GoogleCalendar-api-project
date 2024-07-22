@@ -1,5 +1,4 @@
 import unittest
-from infra.api_wrapper import APIWrapper
 from infra.logger import Logger
 from logic.settings_api import SettingsAPI
 

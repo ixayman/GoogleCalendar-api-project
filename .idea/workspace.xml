@@ -60,42 +60,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-GitHub Copilot": "GitHub Copilot",
-    "Notification.DoNotAsk-GitHub Copilot": "true",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar_by_id.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar_by_id.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_patch_calendar.executor": "Run",
-    "Python tests.Python tests for test_calendar_api.TestColorsAPI.test_update_calendar.executor": "Run",
-    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.executor": "Run",
-    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_calendar_in_calendar_list.executor": "Run",
-    "Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_get_calendar_list_api.executor": "Run",
-    "Python tests.Python tests for test_colors_api.TestColorsAPI.executor": "Run",
-    "Python tests.Python tests for test_colors_api.TestColorsAPI.test_calendar_colors_api.executor": "Run",
-    "Python tests.Python tests for test_colors_api.TestColorsAPI.test_get_colors_api.executor": "Debug",
-    "Python tests.Python tests for test_event_add_api.TestEventsAddAPI.executor": "Run",
-    "Python tests.Python tests for test_event_api.TestEventsAPI.test_get_calendar_events.executor": "Run",
-    "Python tests.Python tests for test_event_api.TestEventsAPI.test_quick_add_event.executor": "Run",
-    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_delete_event.executor": "Run",
-    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_get_event_by_id.executor": "Run",
-    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_patch_event.executor": "Run",
-    "Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_update_event.executor": "Run",
-    "Python tests.Python tests for test_event_operations_api.TestEventsOperationsAPI.executor": "Run",
-    "Python tests.Python tests for test_settings_api.TestColorsAPI.executor": "Run",
-    "Python tests.Python tests for test_settings_api.TestColorsAPI.test_single_setting_api.executor": "Run",
-    "Python tests.Python tests for test_settings_api.TestColorsAPI.test_user_settings_api.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/evoix/PycharmProjects/api-final-project/infra",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-GitHub Copilot&quot;: &quot;GitHub Copilot&quot;,
+    &quot;Notification.DoNotAsk-GitHub Copilot&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_delete_calendar_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_get_calendar_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_insert_new_calendar.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_patch_calendar.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendar_api.TestColorsAPI.test_update_calendar.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendarlist_api.TestColorsAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_calendar_in_calendar_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_calendarlist_api.TestColorsAPI.test_get_calendar_list_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_colors_api.TestColorsAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_colors_api.TestColorsAPI.test_calendar_colors_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_colors_api.TestColorsAPI.test_get_colors_api.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.Python tests for test_event_add_api.TestEventsAddAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_api.TestEventsAPI.test_get_calendar_events.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_api.TestEventsAPI.test_quick_add_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_delete_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_get_event_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_patch_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_operations_api.TestEventsAPI.test_update_event.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_event_operations_api.TestEventsOperationsAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_settings_api.TestColorsAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_settings_api.TestColorsAPI.test_single_setting_api.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_settings_api.TestColorsAPI.test_user_settings_api.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/evoix/PycharmProjects/api-final-project/infra&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evoix\PycharmProjects\api-final-project\infra" />
