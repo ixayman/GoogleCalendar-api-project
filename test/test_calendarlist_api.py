@@ -30,13 +30,15 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the calendar list attributes and summaries
         self.logger.info("Test Case: " + self._testMethodName)
         try:
-            c_list = self.api.get_calendar_list()
-            self.assertEqual(c_list['kind'], self.api.config["object_kind"]["calendarList"])
+            # arrange
             actual_summaries = get_actual_calendar_summaries()
+            # act
+            c_list = self.api.get_calendar_list()
             calendar_summaries = {item['summary'] for item in c_list['items']}
+            # assert
+            self.assertEqual(c_list['kind'], self.api.config["object_kind"]["calendarList"])
             for summary in actual_summaries:
                 self.assertIn(summary, calendar_summaries)
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Get calendar list API test failed with exception: {e}")
@@ -45,9 +47,10 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the presence of the test calendar ID
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             calendar_id = self.api.config["test_calendar_id"]
+            # assert
             self.assertTrue(self.api.check_if_calendar_in_calendar_list(calendar_id))
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Calendar in calendar list test failed with exception: {e}")

@@ -36,10 +36,12 @@ class TestEventsOperationsAPI(unittest.TestCase):
         # Verify the retrieved event's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             event = self.api.get_event_by_id(self.config['test_calendar_id'], self.new_event['id'])
+            # assert
             self.assertEqual(event['kind'], self.config['object_kind']['event'])
             self.assertEqual(event['id'], self.new_event['id'])
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Get event by ID test failed with exception: {e}")
@@ -48,9 +50,11 @@ class TestEventsOperationsAPI(unittest.TestCase):
         # Verify the retrieved events list's kind attribute
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             c_list = self.api.get_calendar_events(self.config['test_calendar_id'])
+            # assert
             self.assertEqual(c_list['kind'], 'calendar#events')
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Get calendar events test failed with exception: {e}")
@@ -59,13 +63,16 @@ class TestEventsOperationsAPI(unittest.TestCase):
         # Verify the patched event's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             new_summary = generate_random_string(8)
+            # act
             event_object = self.api.create_event_object(summary=new_summary)
             updated_event = self.api.patch_event(self.config['test_calendar_id'], self.new_event['id'], event_object)
+            # assert
             self.assertEqual(updated_event['kind'], self.config['object_kind']['event'])
             self.assertEqual(updated_event['summary'], new_summary)
             self.assertEqual(self.new_event['description'], updated_event['description'])
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Patch event test failed with exception: {e}")
@@ -74,12 +81,15 @@ class TestEventsOperationsAPI(unittest.TestCase):
         # Verify the updated event's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             event_object = example_event_object_to_update()
+            # act
             updated_event = self.api.update_event(self.config['test_calendar_id'], self.new_event['id'], event_object)
+            # assert
             self.assertEqual(updated_event['kind'], self.config['object_kind']['event'])
             self.assertEqual(updated_event['summary'], event_object['summary'])
             self.assertNotIn("description", updated_event)
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Update event test failed with exception: {e}")
@@ -88,9 +98,10 @@ class TestEventsOperationsAPI(unittest.TestCase):
         # Verify the deletion operation
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             response = self.api.delete_event(self.config['test_calendar_id'], self.new_event['id'])
+            # assert
             self.assertEqual(response, None)  # successful response returns None
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Delete event test failed with exception: {e}")

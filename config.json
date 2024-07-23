@@ -13,5 +13,4 @@
   },
     "calendar_settings": ["autoAddHangouts","format24HourTime",
       "defaultEventLength","dateFieldOrder","weekStart","format24HourTime","timezone","locale"]
-
 }

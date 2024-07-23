@@ -26,9 +26,10 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the retrieved settings' kind attribute
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             settings = self.api.get_user_settings()
+            # assert
             self.assertEqual(settings['kind'], self.api.config['object_kind']['settings'])
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"User settings API test failed with exception: {e}")
@@ -37,11 +38,13 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the retrieved setting's kind and id attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             setting = self.api.config['calendar_settings'][1]
+            # act
             settings = self.api.get_single_setting(setting)
+            # assert
             self.assertEqual(settings['kind'], self.api.config['object_kind']['setting'])
             self.assertEqual(settings['id'], setting)
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Single setting API test failed with exception: {e}")

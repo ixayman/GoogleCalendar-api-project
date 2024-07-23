@@ -40,13 +40,13 @@ class TestColorsAPI(unittest.TestCase):
     def test_insert_new_calendar(self):
         # Verify the created calendar's attributes
         self.logger.info("Test Case: " + self._testMethodName)
+        # assert
         try:
             self.assertEqual(self.created_calendar['kind'], self.config["object_kind"]["calendar"])
             self.assertEqual(self.created_calendar['summary'], self.new_calendar['summary'])
             self.assertEqual(self.created_calendar['location'], self.new_calendar['location'])
             self.assertEqual(self.created_calendar['timeZone'], self.new_calendar['timeZone'])
             self.assertEqual(self.created_calendar['description'], self.new_calendar['description'])
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Insert new calendar test failed with exception: {e}")
@@ -55,10 +55,11 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the retrieved calendar's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             c_list = self.service.get_calendar(self.created_calendar["id"])
+            # assert
             self.assertEqual(c_list['kind'], self.config["object_kind"]["calendar"])
             self.assertEqual(c_list['id'], self.created_calendar["id"])
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Get calendar by ID test failed with exception: {e}")
@@ -67,13 +68,15 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the patched calendar's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             new_summary = generate_random_string(8)
             calendar_object = self.service.create_calendar_object(summary=new_summary)
+            # act
             updated_calendar = self.service.patch_calendar(self.created_calendar["id"], calendar_object)
+            # assert
             self.assertEqual(updated_calendar['kind'], self.config["object_kind"]["calendar"])
             self.assertEqual(updated_calendar['summary'], new_summary)
             self.assertEqual(self.new_calendar['description'], updated_calendar['description'])
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Patch calendar test failed with exception: {e}")
@@ -82,13 +85,15 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the updated calendar's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             new_summary = generate_random_string(8)
             calendar_object = self.service.create_calendar_object(summary=new_summary)
+            # act
             updated_calendar = self.service.update_calendar(self.created_calendar["id"], calendar_object)
+            # assert
             self.assertEqual(updated_calendar['kind'], self.config["object_kind"]["calendar"])
             self.assertEqual(updated_calendar['summary'], new_summary)
             self.assertNotIn("description", updated_calendar)
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Update calendar test failed with exception: {e}")
@@ -97,9 +102,10 @@ class TestColorsAPI(unittest.TestCase):
         # Verify the calendar deletion operation
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # act
             response = self.service.delete_calendar(self.created_calendar["id"])
+            # assert
             self.assertEqual(response, None)  # successful response returns None
-            self.logger.info(self._testMethodName + " - passed")
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Delete calendar by ID test failed with exception: {e}")

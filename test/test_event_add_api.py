@@ -28,15 +28,18 @@ class TestEventsAddAPI(unittest.TestCase):
         # Verify the added event's attributes
         self.logger.info("Test Case: " + self._testMethodName)
         try:
+            # arrange
             event = example_event_object()
+            # act
             new_event = self.api.insert_event(self.config['test_calendar_id'], event)
+            # assert
             self.assertEqual(new_event['kind'], self.config['object_kind']['event'])
             self.assertEqual(event['summary'], new_event['summary'])
             self.assertEqual(event['description'], new_event['description'])
             self.assertEqual(event['location'], new_event['location'])
             self.assertEqual(event['start']['dateTime'], new_event['start']['dateTime'])
             self.assertEqual(event['end']['dateTime'], new_event['end']['dateTime'])
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Add event API test failed with exception: {e}")
@@ -51,7 +54,7 @@ class TestEventsAddAPI(unittest.TestCase):
             self.assertEqual(new_event['kind'], self.config['object_kind']['event'])
             self.assertIn(new_event['summary'], quick_add_text)
             self.assertIn(new_event['location'], quick_add_text)
-            self.logger.info(self._testMethodName + " - passed")
+
         except Exception as e:
             self.logger.error(f"Test failed with exception: {e}")
             self.fail(f"Quick add event API test failed with exception: {e}")

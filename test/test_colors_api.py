@@ -15,6 +15,7 @@ class TestColorsAPI(unittest.TestCase):
 
     def test_get_colors_api(self):
         # Verify the retrieved colors contain expected keys and kind
+        # assert
         self.assertEqual(self.colors["kind"], "calendar#colors")
         self.assertIn("calendar", self.colors)
         self.assertIn("event", self.colors)
