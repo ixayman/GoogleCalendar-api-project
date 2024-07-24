@@ -92,3 +92,146 @@
 2024-07-23 13:44:27,980 - test_event_operations_api - INFO - Test Case: test_update_event
 2024-07-23 13:44:28,720 - test_event_operations_api - INFO - Tearing down the test case environment
 2024-07-23 13:44:29,303 - test_event_operations_api - INFO - --------------------------
+2024-07-24 13:31:51,171 - test_calendarlist_api - INFO - --------------------------
+2024-07-24 13:31:51,171 - test_calendarlist_api - INFO - Setting up the test case environment
+2024-07-24 13:31:51,363 - test_calendarlist_api - INFO - Test Case: test_get_calendar_list_api
+2024-07-24 13:31:52,120 - test_calendarlist_api - INFO - Tearing down the test case environment
+2024-07-24 13:31:52,120 - test_calendarlist_api - INFO - --------------------------
+2024-07-24 13:42:54,607 - test_event_add_api - INFO - --------------------------
+2024-07-24 13:42:54,608 - test_event_add_api - INFO - Setting up the test case environment
+2024-07-24 13:42:54,610 - test_event_add_api - INFO - Test Case: test_add_event
+2024-07-24 13:42:55,762 - test_event_add_api - INFO - Tearing down the test case environment
+2024-07-24 13:42:55,762 - test_event_add_api - INFO - --------------------------
+2024-07-24 21:13:27,793 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:13:27,793 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:14:11,546 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:14:11,546 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:14:11,546 - test_DB_simple - ERROR - Error during setup: [Errno 2] No such file or directory: '../../client_secret.json'
+2024-07-24 21:14:36,218 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:14:36,218 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:14:37,330 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:14:37,345 - test_DB_simple - ERROR - Test failed with exception: 'dateTime'
+2024-07-24 21:14:37,347 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:14:38,022 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:16:37,002 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:16:37,003 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:16:37,994 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:16:38,039 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:16:38,592 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:18:29,241 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:18:29,241 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:18:30,513 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:18:30,563 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:18:31,303 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:21:03,945 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:21:03,945 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:21:05,375 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:21:05,399 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:21:05,979 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:32:51,789 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:32:51,789 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:32:52,716 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:32:52,717 - test_DB_simple - ERROR - Test failed with exception: name 'event' is not defined
+2024-07-24 21:32:52,720 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:32:53,238 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:34:12,582 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:34:12,582 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:34:13,618 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:34:13,661 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:34:14,176 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:35:54,599 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:35:54,600 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:35:55,967 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:35:56,026 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:35:56,860 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:37:23,923 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:37:23,923 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:37:25,045 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:37:25,105 - test_DB_simple - ERROR - Test failed with exception: 'id'
+2024-07-24 21:37:25,107 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:37:25,615 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:38:51,902 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:38:51,902 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:38:52,816 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:38:52,862 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:38:53,391 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:39:19,548 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:39:19,549 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:39:20,440 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:39:20,519 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:39:21,340 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:43:26,220 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:43:26,220 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:43:27,169 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:43:27,212 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:43:27,719 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:44:17,938 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:44:17,938 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:44:19,193 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:44:19,223 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:44:19,772 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:47:55,482 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:47:55,482 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:47:56,763 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:47:56,794 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:47:57,399 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:48:26,152 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:48:26,152 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:48:27,137 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:48:27,153 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:48:27,911 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:50:37,237 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:50:37,237 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:50:38,201 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:50:38,220 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:50:38,865 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:51:04,127 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:51:04,127 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:51:05,026 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:51:05,055 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:51:05,591 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:52:17,897 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:52:17,897 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:52:18,998 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:52:19,026 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:52:19,578 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:54:50,339 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:54:50,339 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:54:51,232 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:54:51,270 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:54:52,201 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:56:11,615 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:56:11,615 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:56:12,658 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:56:12,695 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:56:13,253 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:56:50,983 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:56:50,983 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:56:51,943 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:56:52,000 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:56:52,506 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:59:02,047 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:59:02,047 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:59:02,972 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:59:03,016 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:59:03,680 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:59:50,352 - test_DB_simple - INFO - --------------------------
+2024-07-24 21:59:50,353 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 21:59:51,224 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 21:59:51,263 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 21:59:51,794 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:00:25,692 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:00:25,692 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 22:00:26,894 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 22:00:26,934 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 22:00:27,451 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:03:13,360 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:03:13,360 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 22:03:14,322 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 22:03:14,379 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 22:03:15,222 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:06:31,045 - test_DB_simple - INFO - --------------------------
+2024-07-24 22:06:31,045 - test_DB_simple - INFO - Setting up the test case environment
+2024-07-24 22:06:32,042 - test_DB_simple - INFO - Test Case: test_add_event_to_DB
+2024-07-24 22:06:32,093 - test_DB_simple - INFO - Tearing down the test case environment
+2024-07-24 22:06:32,919 - test_DB_simple - INFO - --------------------------
